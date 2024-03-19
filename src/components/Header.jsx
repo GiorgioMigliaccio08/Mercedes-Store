@@ -110,6 +110,77 @@ const Header = () => {
           </Card>
         </div>
       </div>
+      <div className="row">
+        <h2 className="text  mt-4 mb-3 text-center"> Gamma Mercedes-Benz</h2>
+        <div className="col-md-3 mb-4">
+          <Card style={{ width: "18rem" }}>
+            <Card.Img
+              height={220}
+              variant="top"
+              src="https://www.mercedes-benz.it/content/italy/it/passengercars/models/hatchback/w177-fl-23-2/overview/_jcr_content/root/responsivegrid/tabs_515631913/tabitem/hotspot_module/hotspot_simple_image.component.damq1.3381269523515.jpg/mercedes-benz-a-class-w177-equipment-multimedia-simple-hotspot-3302x1858-03-2023.jpg"
+            />
+            <Card.Body className="text text-center">
+              <Card.Title>Interni</Card.Title>
+              <Card.Text>
+                Gli interni Mercedes sono stati fin da sempre caratterizzati da
+                mordernità senza confronti.
+              </Card.Text>
+              <Button variant="primary">Sopri!</Button>
+            </Card.Body>
+          </Card>
+        </div>
+        <div className="col-md-3 mb-4">
+          <Card style={{ width: "18rem" }}>
+            <Card.Img
+              height={220}
+              variant="top"
+              src="https://i.ebayimg.com/images/g/F0QAAOSwf05d4~wK/s-l1200.webp"
+            />
+            <Card.Body className="text text-center">
+              <Card.Title>Freni</Card.Title>
+              <Card.Text>
+                I nostri modelli mercedes sono equipaggiati di ottimi freni per
+                carantire maggior confort.
+              </Card.Text>
+              <Button variant="primary">Sopri!</Button>
+            </Card.Body>
+          </Card>
+        </div>
+        <div className="col-md-3 mb-4">
+          <Card style={{ width: "18rem" }}>
+            <Card.Img
+              height={220}
+              variant="top"
+              src="https://www.trivellato.it/data_files/pages/3204da6-autotelaio-sospensioni-attive-mercedes.jpg"
+            />
+            <Card.Body className="text text-center">
+              <Card.Title>Sospensioni</Card.Title>
+              <Card.Text>
+                I nostri modelli mercedes sono equipaggiati di sospensioni per
+                carantire maggior confort.
+              </Card.Text>
+              <Button variant="primary">Sopri!</Button>
+            </Card.Body>
+          </Card>
+        </div>
+        <div className="col-md-3 mb-4">
+          <Card style={{ width: "18rem" }}>
+            <Card.Img
+              height={220}
+              variant="top"
+              src="https://img.sm360.ca/ir/w770/images/article/mercedes-benz-ottawa/114964//2022-02-27_image_22c0128-040-source1685547571199.jpg"
+            />
+            <Card.Body className="text text-center">
+              <Card.Title>Hybrid</Card.Title>
+              <Card.Text>
+                La nuova gamma Hybrid equipaggiata da interni ancora più
+                modernizzati.
+              </Card.Text>
+              <Button variant="primary">Sopri!</Button>
+            </Card.Body>
+          </Card>
+        </div>
+      </div>
     </div>
   );
 };
