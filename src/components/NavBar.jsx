@@ -1,5 +1,6 @@
 import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
 import Logo from "../assets/Logo.png";
+import { Link } from "react-router-dom";
 
 function NavBar() {
   return (
@@ -33,7 +34,9 @@ function NavBar() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#link">Aquista Auto</Nav.Link>
+
+              <Nav.Link>Aquista Auto</Nav.Link>
+
               <NavDropdown title="Modelli" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">AMG</NavDropdown.Item>
                 <NavDropdown.Divider />
