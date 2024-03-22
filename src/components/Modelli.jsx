@@ -1,8 +1,10 @@
 import React from "react";
+import NavBar from "./NavBar";
 
 const Modelli = () => {
   return (
     <div className="container-fluid">
+      <NavBar />
       <div className="row">
         <div className="col-md-6">
           <div className="card mb-3">
