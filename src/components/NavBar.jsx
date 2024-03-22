@@ -1,3 +1,4 @@
+import React from "react";
 import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
 import Logo from "../assets/Logo.png";
 import { Link } from "react-router-dom";
@@ -20,7 +21,7 @@ function NavBar() {
       </style>
       <Navbar expand="lg" className="bg-body-primary">
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand>
             <img
               src={Logo}
               width="30"
@@ -33,26 +34,36 @@ function NavBar() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
-
-              <Nav.Link>Aquista Auto</Nav.Link>
-
+              <Nav.Link as={Link} to="/">
+                Home
+              </Nav.Link>
+              <Nav.Link as={Link} to="/aquistaauto">
+                Aquista Auto
+              </Nav.Link>
               <NavDropdown title="Modelli" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">AMG</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/modelli">
+                  AMG
+                </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.2">Berline</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
+                <NavDropdown.Item as={Link} to="/modelli">
+                  Berline
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/modelli">
                   Suv & Fuoristrada
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.4">
+                <NavDropdown.Item as={Link} to="/modelli">
                   Station Wagon
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.5">Compatte</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.6">Coupè</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.7">
+                <NavDropdown.Item as={Link} to="/modelli">
+                  Compatte
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/modelli">
+                  Coupè
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/modelli">
                   Cabrio / Roadster
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.8">
+                <NavDropdown.Item as={Link} to="/modelli">
                   Monovolume
                 </NavDropdown.Item>
               </NavDropdown>
