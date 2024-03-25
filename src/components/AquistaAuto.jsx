@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Card, Button, Col, Row } from "react-bootstrap";
+import { Card, Button, Col, Row, Form } from "react-bootstrap";
 import NavBar from "./NavBar";
 
 const AcquistaAuto = () => {
@@ -63,13 +63,13 @@ const AcquistaAuto = () => {
   return (
     <div>
       <NavBar />
-      <h2 className="text">Scegli l'auto dei tuoi sogni:</h2>
+      <h2 className="texta">Scegli l'auto dei tuoi sogni:</h2>
       <Row>
-        <Col sm={6}>
+        <Col sm={6} className="leftpart">
           <Row className="justify-content-between">
             {cars.map((car, index) => (
-              <Col key={car.id} md={4} className="mb-3 ms-2">
-                <Card style={{ width: "18rem", margin: "0 auto" }}>
+              <Col key={car.id} md={3} className="mb-3 ms-2">
+                <Card style={{ width: "16rem" }}>
                   <Card.Img
                     variant="top"
                     src={car.image}
@@ -94,20 +94,44 @@ const AcquistaAuto = () => {
             ))}
           </Row>
         </Col>
-        <Col sm={6}>
+        <Col sm={6} className="rightpart">
           {selectedCar && (
             <div className="selected-car">
-              <h3>Hai selezionato:</h3>
+              <h3 className="textt">Hai selezionato:</h3>
               <img
                 src={selectedCar.image}
                 alt={selectedCar.model}
                 className="selected-car-image"
-                height={400}
-                width={500}
+                height={200}
+                width={300}
               />
-              <p>Marca: {selectedCar.brand}</p>
-              <p>Modello: {selectedCar.model}</p>
-              <p>Prezzo: {selectedCar.price}</p>
+              <p className="textby">Marca: {selectedCar.brand}</p>
+              <p className="textby">Modello: {selectedCar.model}</p>
+              <p className="textby">Prezzo: {selectedCar.price}</p>
+              <div className="color">
+                <Form.Label htmlFor="exampleColorInput">
+                  Scegli il colore:
+                </Form.Label>
+                <Form.Control
+                  type="color"
+                  className="colorpic"
+                  id="exampleColorInput"
+                  defaultValue="#563d7c"
+                  title="Choose your color"
+                />
+              </div>
+              <div>
+                <Form.Select
+                  aria-label="Default select example"
+                  className="alimentazione"
+                >
+                  <option>Scegli il tipo di Alimentazione :</option>
+                  <option value="1">Benzina</option>
+                  <option value="2">Diesel</option>
+                  <option value="3">Elettrica</option>
+                  <option value="3">Ibrido</option>
+                </Form.Select>
+              </div>
             </div>
           )}
         </Col>
