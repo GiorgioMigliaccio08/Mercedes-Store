@@ -42,3 +42,73 @@
   font-weight: 500;
   font-style: normal;
 }
+.texta {
+  font-family: "Maitree", serif;
+  font-weight: 500;
+  font-style: normal;
+  background-color: rgb(188, 183, 183);
+  padding: 10px;
+  margin-bottom: 0;
+}
+.leftpart {
+  background-color: rgb(188, 183, 183);
+}
+.rightpart {
+  background-color: rgb(188, 183, 183);
+}
+
+.selected-car {
+  background-color: rgb(126, 124, 124);
+  border-radius: 30px;
+  margin-left: 150px;
+  width: 500px;
+  height: 600px;
+}
+.textt {
+  font-family: "Maitree", serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #282c34;
+}
+.textby {
+  font-family: "Maitree", serif;
+  font-weight: 500;
+  font-style: normal;
+  border: 1px solid rgb(75, 75, 75);
+  background-color: rgb(255, 255, 255);
+  color: rgb(11, 11, 11);
+  border-radius: 10px;
+  margin-left: 150px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 200px;
+}
+.color {
+  font-family: "Maitree", serif;
+  font-weight: 500;
+  font-style: normal;
+  padding: 10px;
+  display: flex;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  width: 200px;
+  margin-left: 150px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(75, 75, 75);
+}
+.colorpic {
+  margin-left: 20px;
+  margin-top: 5px;
+  border: 1px solid rgb(75, 75, 75);
+}
+.alimentazione {
+  font-family: "Maitree", serif;
+  font-weight: 500;
+  font-style: normal;
+  width: 300px;
+  background-color: rgb(255, 255, 255);
+  margin-left: 100px;
+  border: none;
+  margin-top: 10px;
+  border: 1px solid rgb(75, 75, 75);
+}
