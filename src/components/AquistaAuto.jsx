@@ -4,6 +4,7 @@ import NavBar from "./NavBar";
 
 const AcquistaAuto = () => {
   const [selectedCar, setSelectedCar] = useState(null);
+  const [leftCardWidth, setLeftCardWidth] = useState("10rem");
 
   const cars = [
     {
@@ -41,7 +42,7 @@ const AcquistaAuto = () => {
     {
       id: 5,
       brand: "Mercedes",
-      model: "Hybrid-Plus",
+      model: "Hybrid",
       price: "$98,000",
       image:
         "https://images.caradisiac.com/images/9/0/2/8/199028/S0-le-nouveau-mercedes-glc-a-partir-de-60-700eur-734113.jpg",
@@ -54,10 +55,43 @@ const AcquistaAuto = () => {
       image:
         "https://www.gruppodemariani.it/files/2023/11/IMG_20231116_164615_cropped_2050_180102.jpg",
     },
+    {
+      id: 7,
+      brand: "Mercedes",
+      model: "GT Coupè",
+      price: "$40,000",
+      image:
+        "https://www.mercedes-benz.ch/content/switzerland/it/passengercars/models/coupe/c192-24-1/overview/_jcr_content/root/responsivegrid/simple_stage_copy_co.component.damq1.3405643967983.jpg/mercedes-amg-gt-c192-stage-3840x3840-07-2023.jpg",
+    },
+    {
+      id: 8,
+      brand: "Mercedes",
+      model: "Classe S",
+      price: "$45,000",
+      image:
+        "https://cdn.drivek.com/configurator-imgs/cars/it/Original/MERCEDES/MAYBACH-S-CLASS/41434_SUV-5-DOORS/mercedes-benz-maybach-s-class-2021-front-side-1.jpg",
+    },
+    {
+      id: 9,
+      brand: "Mercedes",
+      model: "Hybrid",
+      price: "$42,000",
+      image:
+        "https://cdn.motor1.com/images/mgl/BXAlP4/s3/mercedes-cla-elettrica-il-render-di-motor1.com.jpg",
+    },
+    {
+      id: 10,
+      brand: "Mercedes",
+      model: "Classe A",
+      price: "$80,000",
+      image:
+        "https://immagini.alvolante.it/sites/default/files/styles/anteprima_lunghezza_640/public/news_galleria/2018/02/mercedes-classe-a-2018-01-ufficiali_28.jpg",
+    },
   ];
 
   const handleCarSelection = (car) => {
     setSelectedCar(car);
+    setLeftCardWidth("10rem");
   };
 
   return (
@@ -65,17 +99,17 @@ const AcquistaAuto = () => {
       <NavBar />
       <h2 className="texta">Scegli l'auto dei tuoi sogni:</h2>
       <Row>
-        <Col sm={6} className="leftpart">
-          <Row className="justify-content-between">
+        <Col sm={selectedCar ? 6 : 12} className="leftpart">
+          <Row className="cars">
             {cars.map((car, index) => (
-              <Col key={car.id} md={3} className="mb-3 ms-2">
-                <Card style={{ width: "16rem" }}>
+              <Col key={car.id} md={2} className="mb-3 ms-2">
+                <Card style={{ width: "14rem" }}>
                   <Card.Img
                     variant="top"
                     src={car.image}
                     alt={car.model}
                     className="car-image"
-                    height={200}
+                    height={180}
                   />
                   <Card.Body>
                     <Card.Title className="text">
@@ -86,7 +120,7 @@ const AcquistaAuto = () => {
                       variant="primary"
                       onClick={() => handleCarSelection(car)}
                     >
-                      Aquista
+                      Acquista
                     </Button>
                   </Card.Body>
                 </Card>
@@ -94,8 +128,8 @@ const AcquistaAuto = () => {
             ))}
           </Row>
         </Col>
-        <Col sm={6} className="rightpart">
-          {selectedCar && (
+        {selectedCar && (
+          <Col sm={6} className="rightpart">
             <div className="selected-car">
               <h3 className="textt">Hai selezionato:</h3>
               <img
@@ -133,8 +167,8 @@ const AcquistaAuto = () => {
                 </Form.Select>
               </div>
             </div>
-          )}
-        </Col>
+          </Col>
+        )}
       </Row>
     </div>
   );
