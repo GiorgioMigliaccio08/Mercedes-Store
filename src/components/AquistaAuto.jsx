@@ -87,6 +87,84 @@ const AcquistaAuto = () => {
       image:
         "https://immagini.alvolante.it/sites/default/files/styles/anteprima_lunghezza_640/public/news_galleria/2018/02/mercedes-classe-a-2018-01-ufficiali_28.jpg",
     },
+    {
+      id: 11,
+      brand: "Mercedes",
+      model: "A Sedan",
+      price: "$40,000",
+      image: "https://i.ytimg.com/vi/x-OLGPX-K-M/maxresdefault.jpg",
+    },
+    {
+      id: 12,
+      brand: "Mercedes",
+      model: "Classe A",
+      price: "$45,000",
+      image:
+        "https://storage.edidomus.it/ListinoAuto/FOTO_A_16_9_640/00064640.JPG",
+    },
+    {
+      id: 13,
+      brand: "Mercedes",
+      model: "Classe A",
+      price: "$42,000",
+      image: "https://images.automercato.it/297/45426/646902.jpg",
+    },
+    {
+      id: 14,
+      brand: "Mercedes",
+      model: "A Sedan",
+      price: "$80,000",
+      image:
+        "https://www.avvenire.it/c/2019/PublishingImages/3c5970acc8fa4473826516efc479b258/mercedesbe_67275499.jpg?width=677",
+    },
+    {
+      id: 15,
+      brand: "Mercedes",
+      model: "Classe A",
+      price: "$98,000",
+      image:
+        "https://www.italiaonroad.it/wp-content/uploads/2017/02/ClasseA-next-770x470.jpg",
+    },
+    {
+      id: 16,
+      brand: "Mercedes",
+      model: "C-Class",
+      price: "$40,000",
+      image:
+        "https://image.jimcdn.com/app/cms/image/transf/dimension=1920x400:format=jpg/path/s158b4c721572b9be/image/i4d28d7cda733df80/version/1682519442/image.jpg",
+    },
+    {
+      id: 17,
+      brand: "Mercedes",
+      model: "GT Coupè",
+      price: "$40,000",
+      image:
+        "https://www.padovastar.it/data_files/custom_listing/npd-classe-a-thxqxx.webp",
+    },
+    {
+      id: 18,
+      brand: "Mercedes",
+      model: "Classe S",
+      price: "$45,000",
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRDu8accmjMVdF_wOGkWGuALQljtAXs3HvF_0fZHahIjtj1mHttiImKev5c06plPaBTxE&usqp=CAU",
+    },
+    {
+      id: 19,
+      brand: "Mercedes",
+      model: "Hybrid",
+      price: "$42,000",
+      image:
+        "https://web.imgstore.it/ec9a7fbd1aca4b7eb2b1d15cf8246269_orig.jpg",
+    },
+    {
+      id: 20,
+      brand: "Mercedes",
+      model: "Classe A",
+      price: "$80,000",
+      image:
+        "https://immagini.alvolante.it/sites/default/files/styles/anteprima_lunghezza_640_jpg/public/serie_auto_galleria/2022/11/mercedes_a_amg_ant_0.png?itok=54bVPTUM",
+    },
   ];
 
   const handleCarSelection = (car) => {
